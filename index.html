@@ -5,27 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+    </script>
 </head>
 
 <body>
     <header>
-       <nav class="fruit-nav flex justify-between items-center h-20 bg-red-400 rounded-full mx-10">
-            <div class="nav-list flex flex-row w-300 justify-around ml-10 border-spacing-1 h-10 bg-yellow-400">
-                <a class=" hover:text-white" href="">Home</a>
-                <a class="hover:text-white" href="">About Us</a>
-                <a class="hover:text-white" href="">Shop</a>
-                <a class="hover:text-white" href="">All Fruits</a>
+       <nav class="fruit-nav flex justify-around items-center h-16 mt-10 bg-red-400 rounded-full mx-20">
+            <div class="nav-list flex flex-row space-x-5 colo ">
+                <a class=" hover:text-blue-600" href="">Home</a>
+                <a class="hover:text-blue-600" href="">About Us</a>
+                <a class="hover:text-blue-600" href="">Shop</a>
+                <a class="hover:text-blue-600" href="">All Fruits</a>
             </div>
-            <div class="nav-midle-logo w-200 bg-slate-50 items-center">
-                <img class="w-4" src="/images/logo.png" alt="">
+            <div class="flex items-center">
+                <img class="w-10" src="/images/logo.png" alt="">
+                <p class="text-white font-semibold" >Fruit Burst</p>
             </div>
-            <div class="nav-search mr-50">
-                <form>
-                    <input type="text" placeholder="Search Here...">
-                </form>    
+            <div class="nav-search">                
+               
+                <form class="search-item">
+                    <input class=" h-7 w-52 pl-3 rounded-full text-sm  " 
+                    type="text" class="ml-10" placeholder="Search Here...">
+                    <button class="-ml-8 border-6 bg-trasparent" type="submit"><i
+                        class="fa fa-search text-black"></i></button>
+                    
+                </form>                    
+                
             </div>
        </nav>
     </header>
